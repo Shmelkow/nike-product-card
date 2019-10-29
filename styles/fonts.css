@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('fonts/ProximaNova/proximanovaregular-webfont.woff2') format('woff2'),
+         url('fonts/ProximaNova/proximanovaregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Roboto/roboto_regular/roboto-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto - Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Roboto_Condensed/robotocondensed-regular-webfont.woff') format('woff');
+}
+

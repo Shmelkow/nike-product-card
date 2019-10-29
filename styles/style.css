@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: linear-gradient(to right, #663d97, #ab70af);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/bg_t.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.container {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    /*padding: 0 15px;*/
+}
+
+.ba-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 0 66px;
+}
+
+.ba-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ba-menu__item {
+    margin-right: 3vw;
+}
+
+.ba-menu__item_last {
+    margin-right: 0;
+}
+
+.ba-menu__link {   
+    /* Style for "LIFESTYLE" */
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;  
+    transition: .3s;
+    display: block;
+    overflow: hidden;
+}
+
+.ba-menu__link:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ffffff;
+    transform: translateX(130%);
+    transition: transform .4s;
+}
+
+.ba-menu__link:hover:after,
+.ba-menu__link:focus:after {
+    transform: translate(0);
+}
+
+.ba-button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.ba-button_menu {
+    height: 13px;
+    width: 22px;
+    /* margin-left: 68px; */
+    background-image: url(../img/btn_menu.png); 
+}
+
+.ba-card {    
+    height: 50vh;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    box-shadow: 26px 0px 0px -11px rgba(255,255,255,0.3),
+    56px 0px 0px -25px rgba(255,255,255,0.3), 
+    -26px 0px 0px -11px rgba(255,255,255,0.3),
+    -56px 0px 0px -25px rgba(255,255,255,0.3);
+}
+
+.ba-card__gallery {
+    width: 66.666%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ba-card__image {
+    margin-top: 10vh; /*63px*/
+}
+
+.ba-zoom__button {
+    height: 21px;
+    width: 21px;
+    align-self: flex-end;
+    margin-right: 24px;
+    background-image: url(../img/btn_add.png);
+}
+
+.ba-card__previews {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3vh; /*23px*/
+}
+
+.ba-card__preview {
+    margin: 0 18px;
+}
+
+.ba-card__mini-thumb {
+    border: 2px solid #fff;
+}
+
+.ba-card__info {
+    width: 33.333%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 31px;
+}
+
+.ba-button_info {
+    height: 16px;
+    width: 16px;
+    align-self: flex-end;
+    margin: 8px 11px 8px 0;
+    background-image: url(../img/btn_close.png);
+}
+
+.ba-bage_new {
+    /* Style for "NEW" */
+    padding: 0 5px;
+    background-color: #ffa60d;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 27px;
+    /* Text style for "NEW" */
+    letter-spacing: 0.14px;
+}
+
+.ba-card__title {
+    width: 80%;
+    /* Style for "THE RUNNIN" */
+    margin: 5px 0;
+    color: #000000;
+    font-family: "Roboto - Condensed";
+    font-size: 24px;
+    line-height: 27px;
+    text-transform: uppercase;
+    /* Text style for "THE , HAS" */
+    letter-spacing: 0.24px;  
+}
+
+.ba-card__title span {
+    /* Text style for "RUNNING" */
+    color: #5e4fff;
+    letter-spacing: 0.24px;
+}
+
+.ba-card__rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ba-card__subtitle_huarache {
+    margin: 0 16px 0 0;
+    /* Style for "Huarache" */
+    color: #000000;
+    font-family: "Roboto - Condensed";
+    font-size: 12px;
+    line-height: 27px;
+    /* Text style for "Huarache" */
+    letter-spacing: 0.12px;
+}
+
+.ba-stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* list-style: none; */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.ba-stars__img {
+    padding: 0 2px;
+}
+
+.ba-card__price {
+    /* Style for "$ 200" */
+    color: #000000;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 27px;
+    /* Text style for "$ 200" */
+    letter-spacing: 0.22px;
+}
+
+.ba-card__size {
+    width: 85%;
+    margin-top: 4.14vh;
+    margin-bottom: 5vh;
+}
+
+.ba-card__subtitle {
+    /* Style for "Size" */
+    color: #000000;
+    font-family: Roboto;
+    font-size: 12px;
+    margin: 0;
+    /* Text style for "Size" */
+    letter-spacing: 0.12px;
+}
+
+.ba-card__size-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-left: -8px;
+    list-style: none;
+}
+
+.ba-card__size-item {
+    /* Style for "7" */
+    color: #000000;
+    font-family: "Roboto - Condensed";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    /* Text style for "7" */
+    letter-spacing: 0.15px;
+}
+
+input[type="radio"] {
+    display: none;
+    /*visibility: hidden;*/
+}
+
+.ba-card__size-item label {
+    display: block;
+    width:  24px;
+    line-height: 24px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.ba-card__size-list label:hover,
+.ba-card__size-list input:checked + label {
+    border-color: black;
+}
+
+.ba-card__buttons {
+    margin-bottom: 8.5vh;
+}
+.ba-button_purple {
+    height: 30px;
+    width: 118px;
+    align-self: flex-start;
+    background-color: #a200b8;
+    /* Style for "ADD TO CAR" */
+    color: #ffffff;
+    font-family: "Roboto - Condensed";
+    font-size: 12px;
+    line-height: 27px;
+    text-transform: uppercase;
+    /* Text style for "ADD TO CAR" */
+    letter-spacing: 0.12px;
+}
+
+.ba-button_white {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin-top: 3px;
+}
